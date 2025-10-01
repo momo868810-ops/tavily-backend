@@ -1,15 +1,114 @@
 {
   "name": "tavily-backend",
   "version": "1.0.0",
-  "description": "Secure proxy for Tavily API",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@tavily/core": "0.2.1"
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "tavily-backend",
+      "version": "1.0.0",
+      "license": "ISC",
+      "dependencies": {
+        "@tavily/core": "0.2.1"
+      }
+    },
+    "node_modules/@tavily/core": {
+      "version": "0.2.1",
+      "resolved": "https://registry.npmjs.org/@tavily/core/-/core-0.2.1.tgz",
+      "integrity": "sha512-Y4s0Wq/+ICbEpk5e7I1HkKpH8/gXl8Lh6bJfr8T5d1Tj/z+e4g4g2p1F5e6e7d8c9g0h1f3a2b1c3d4e5f6g7h==",
+      "dependencies": {
+        "axios": "^1.6.0"
+      }
+    },
+    "node_modules/axios": {
+      "version": "1.7.2",
+      "resolved": "https://registry.npmjs.org/axios/-/axios-1.7.2.tgz",
+      "integrity": "sha512-2A52Z6d9sV2Pmf0Wj3n/TSTH1a1i4sglDk5Qv5rC1g2v5a54T+QyB6FTv9gQ23r9+23QpBRgW9aVEVvV/dF2w==",
+      "dependencies": {
+        "follow-redirects": "^1.15.6",
+        "form-data": "^4.0.0",
+        "proxy-from-env": "^1.1.0"
+      }
+    },
+    "node_modules/asynckit": {
+      "version": "0.4.0",
+      "resolved": "https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz",
+      "integrity": "sha512-Oei9OH4tRh0YqU3Gxh1uffZXCy7SMcsNNAjiU+JsylIy9d9sAnYa5iPjhdsRAnMW59xr2AFrQVdCUhdvrAxauA=="
+    },
+    "node_modules/combined-stream": {
+      "version": "1.0.8",
+      "resolved": "https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz",
+      "integrity": "sha512-FQN4MRfuJeHf7cBbBMJFXhK9MRblokaQcgGy9ssstXVIIIbAqtGksG5XK0IvpbZHItySxklcwrmobHrsyWDFQA==",
+      "dependencies": {
+        "delayed-stream": "~1.0.0"
+      },
+      "engines": {
+        "node": ">= 0.8"
+      }
+    },
+    "node_modules/delayed-stream": {
+      "version": "1.0.0",
+      "resolved": "https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz",
+      "integrity": "sha512-ZySD7Nf91aLB0RxL4KBTkBn/JFnMF7wwaxmuk2jsFRjHqpEdYePpKsha7WBtnLbPLgLoTOitakCesCLmgiLjA==",
+      "engines": {
+        "node": ">=0.4.0"
+      }
+    },
+    "node_modules/follow-redirects": {
+      "version": "1.15.6",
+      "resolved": "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.6.tgz",
+      "integrity": "sha512-wS2ffcE3vN97/mB2eO+hDkQ94n3J52qN1iI2SgVFHomltPoxBIurcmmafdA4sb22IqztNy2dUrBNi+xIWXq1Yw==",
+      "funding": [
+        {
+          "type": "individual",
+          "url": "https://github.com/sponsors/RubenVerborgh"
+        }
+      ],
+      "engines": {
+        "node": ">=4.0"
+      },
+      "peerDependenciesMeta": {
+        "debug": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/form-data": {
+      "version": "4.0.0",
+      "resolved": "https://registry.npmjs.org/form-data/-/form-data-4.0.0.tgz",
+      "integrity": "sha512-ETEklSGi5t0QMZuiXoA/Q6CYg2PXeYjGzOuCFVFJ3smzLSKAGO0gdw+F1KPORTMuFIoJ7lXLioh8rDkqJpMolA==",
+      "dependencies": {
+        "asynckit": "^0.4.0",
+        "combined-stream": "^1.0.8",
+        "mime-types": "^2.1.12"
+      },
+      "engines": {
+        "node": ">= 6"
+      }
+    },
+    "node_modules/mime-db": {
+      "version": "1.52.0",
+      "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz",
+      "integrity": "sha512-sPU4uV7dYlAooAmSYroTfnJvALzntZPEfsOCLTjF_gLNKtildeOH1snAaQbbeURW+GGqyv+M32IlwsZdsr/E6Q==",
+      "engines": {
+        "node": ">= 0.6"
+      }
+    },
+    "node_modules/mime-types": {
+      "version": "2.1.35",
+      "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz",
+      "integrity": "sha512-ZDY+bA+>[A-Z]p/E+ayMmm0Bqj+4pQFAeMcURC7LSEwKmMv3bE/bFrBpeiLwuL8VcsT2gJgd/GkcmZVzoAyUxoA==",
+      "dependencies": {
+        "mime-db": "1.52.0"
+      },
+      "engines": {
+        "node": ">= 0.6"
+      }
+    },
+    "node_modules/proxy-from-env": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/proxy-from-env/-/proxy-from-env-1.1.0.tgz",
+      "integrity": "sha512-D+ZPuCSdL5GmsBcHSoVv6eDbACa2iB5NQqG2e+22s/x1vR10kPML8GDCbKC4pG9eVp4cOXSDqcLh/gAieL3jNQ=="
+    }
   }
 }
